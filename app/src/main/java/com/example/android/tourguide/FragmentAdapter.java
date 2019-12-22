@@ -17,9 +17,10 @@ public class FragmentAdapter extends FragmentPagerAdapter {
          else if (position == 1){
             return new MonumentsFragment();
         }
-//         else if (position == 2) {
-//            return new WednesdayFragment();
-//        } else if (position == 3) {
+         else if (position == 2) {
+            return new ParksFragment();
+        }
+//        else if (position == 3) {
 //            return new ThursdayFragment();
 //        } else {
 //            return new FridayFragment();
@@ -30,6 +31,24 @@ public class FragmentAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        String title = null;
+        if (position == 0)
+        {
+            title = "Restaurants";
+        }
+        else if (position == 1)
+        {
+            title = "Monuments";
+        }
+        else if (position == 2)
+        {
+            title = "Parks";
+        }
+        return title;
     }
 }
