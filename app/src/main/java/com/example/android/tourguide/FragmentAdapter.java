@@ -20,18 +20,15 @@ public class FragmentAdapter extends FragmentPagerAdapter {
          else if (position == 2) {
             return new ParksFragment();
         }
-//        else if (position == 3) {
-//            return new ThursdayFragment();
-//        } else {
-//            return new FridayFragment();
-//        }
-//        return new RestaurantsFragment();
+        else if (position == 3) {
+            return new ShopsFragment();
+        }
         return null;
     }
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 
     @Override
@@ -48,6 +45,10 @@ public class FragmentAdapter extends FragmentPagerAdapter {
         else if (position == 2)
         {
             title = "Parks";
+        }
+        else if (position == 3)
+        {
+            title = "Shops";
         }
         return title;
     }
