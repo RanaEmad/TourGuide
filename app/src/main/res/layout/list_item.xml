@@ -3,11 +3,12 @@
     android:id="@+id/item_layout"
     style="@style/list_item"
     >
+    <ImageView
+        style="@style/list_item_img"
+        android:id="@+id/img"
+        />
 <TextView
     style="@style/item"
-    android:textFontWeight="@android:integer/config_longAnimTime"
-    android:textSize="20sp"
-    android:layout_marginBottom="5dp"
     android:id="@+id/name"
    />
 
