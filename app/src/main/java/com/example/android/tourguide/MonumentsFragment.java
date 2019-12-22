@@ -26,7 +26,8 @@ public class MonumentsFragment extends Fragment {
 
         ArrayList<Item> monuments= new ArrayList<Item>();
 
-        monuments.add(new Item("test monument","mon img"));
+        monuments.add(new Item(getString(R.string.monument1),R.drawable.pyramids));
+        monuments.add(new Item(getString(R.string.monument2),R.drawable.citadel));
 
         View rootView= inflater.inflate(R.layout.list,container,false);
 

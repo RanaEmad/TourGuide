@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -31,6 +32,9 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.name);
 
         nameTextView.setText(currentItem.getName());
+
+        ImageView imgView= (ImageView) listItemView.findViewById(R.id.img);
+        imgView.setImageResource(currentItem.getImage());
 
         return listItemView;
     }

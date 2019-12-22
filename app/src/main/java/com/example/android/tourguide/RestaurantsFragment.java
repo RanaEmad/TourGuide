@@ -23,8 +23,8 @@ public class RestaurantsFragment extends Fragment {
 
         ArrayList<Item> restaurants = new ArrayList<Item>();
 
-        restaurants.add(new Item("test rest","img"));
-
+        restaurants.add(new Item(getString(R.string.restaurant1),R.drawable.abouelsid));
+        restaurants.add(new Item(getString(R.string.restaurant2),R.drawable.cairokitchen));
 
         View rootView = inflater.inflate(R.layout.list, container, false);
 

@@ -1,6 +1,20 @@
 <resources>
     <string name="app_name">Tour Guide</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab1">Restaurants</string>
+    <string name="tab2">Monuments</string>
+    <string name="tab3">Parks</string>
+    <string name="tab4">Shops</string>
+
+    <string name="restaurant1">Abou El Sid</string>
+    <string name="restaurant2">Cairo Kitchen</string>
+
+    <string name="monument1">The Pyramids</string>
+    <string name="monument2">Salah El Din Citadel</string>
+
+    <string name="park1">El Azhar Park</string>
+    <string name="park2">Andalos Park</string>
+
+    <string name="shop1">Khan El Khalili</string>
+    <string name="shop2">City Stars</string>
 </resources>

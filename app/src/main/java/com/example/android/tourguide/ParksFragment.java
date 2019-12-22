@@ -26,7 +26,8 @@ public class ParksFragment extends Fragment {
 
         ArrayList<Item> parks= new ArrayList<Item>();
 
-        parks.add(new Item("test park","park img"));
+        parks.add(new Item(getString(R.string.park1),R.drawable.azhar));
+        parks.add(new Item(getString(R.string.park2),R.drawable.andalos));
 
         View rootView= inflater.inflate(R.layout.list,container,false);
 

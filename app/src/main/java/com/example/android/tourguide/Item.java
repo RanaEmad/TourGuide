@@ -3,8 +3,8 @@ package com.example.android.tourguide;
 public class Item {
 
     private String name;
-    private String image;
-    public Item(String name, String image){
+    private int image;
+    public Item(String name, int image){
         this.name=name;
         this.image=image;
     }
@@ -13,7 +13,7 @@ public class Item {
         return name;
     }
 
-    public String getImage() {
+    public int getImage() {
         return image;
     }
 }

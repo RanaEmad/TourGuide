@@ -1,12 +1,16 @@
 package com.example.android.tourguide;
 
+import android.content.Context;
+
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 public class FragmentAdapter extends FragmentPagerAdapter {
-    public FragmentAdapter(FragmentManager fm){
+    private Context cont;
+    public FragmentAdapter(Context cont,FragmentManager fm){
         super(fm);
+        this.cont=cont;
     }
 
     @Override
@@ -36,19 +40,19 @@ public class FragmentAdapter extends FragmentPagerAdapter {
         String title = null;
         if (position == 0)
         {
-            title = "Restaurants";
+            title = cont.getString(R.string.tab1) ;
         }
         else if (position == 1)
         {
-            title = "Monuments";
+            title = cont.getString(R.string.tab2) ;
         }
         else if (position == 2)
         {
-            title = "Parks";
+            title = cont.getString(R.string.tab3) ;
         }
         else if (position == 3)
         {
-            title = "Shops";
+            title = cont.getString(R.string.tab4) ;
         }
         return title;
     }

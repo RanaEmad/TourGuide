@@ -26,7 +26,8 @@ public class ShopsFragment extends Fragment {
 
         ArrayList<Item> shops= new ArrayList<Item>();
 
-        shops.add(new Item("test shop","shop img"));
+        shops.add(new Item(getString(R.string.shop1),R.drawable.khanelkhalili));
+        shops.add(new Item(getString(R.string.shop2),R.drawable.citystars));
 
         View rootView= inflater.inflate(R.layout.list,container,false);
 
